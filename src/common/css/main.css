@@ -4,7 +4,7 @@
 
     .fz-12 { font-size: 12px !important;}
     .fz-13 { font-size: 13px !important;}
-    
+        
     @media (min-width: 576px){
         .fz-sm-12 { font-size: 12px !important;}
         .fz-sm-13 { font-size: 13px !important;}
@@ -93,7 +93,7 @@
         top: 0;
         left: 0;
         right: 0;
-        /* background-color: rgba(255,198,0,0.9); */
+        /* background-color: rgba(255,198,0,0.9); TODO */
         background-color:white;
         z-index: 10;
         padding: 50px 0;
@@ -168,7 +168,7 @@
             position: relative;
             display: block !important;
             padding: 0;
-            /* background-color: #ffc600; */
+            /* background-color: #ffc600; TODO */
         }
         #navbar {
             padding: 0 1rem;
@@ -193,6 +193,7 @@
 
 /*=== footer ===*/
     ._footer-top {
+        display: none; /* TODO */
         background-color: #343434;
     }
     ._footer-middle {
@@ -200,8 +201,41 @@
     }
     ._footer-bottom {
         background-color: #000000;
-    }        
+    }
 
+    ._footer-mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #aaa;
+    }
+    ._footer-mobile ._menu-row {
+        position: relative;
+        align-items: center;
+        text-align: center; 
+        background-image: linear-gradient(to top,#666 0%,#252525 100%);
+        color: #fff;
+        padding: 10px 0;
+        letter-spacing: 2px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    ._footer-mobile ._menu-row > [class*=col-] > img {
+        margin-bottom: 6px;
+        width: 30px;
+    }
+
+    ._footer-mobile ._menu-row > *:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        background-color: #aaa;
+        height: 70%;
+    }
 
 
 /*=== index ===*/
@@ -210,7 +244,7 @@
         background-color: #000;
     }
     #index ._block-head {
-        /* background-color: #FFC600; */
+        /* background-color: #ffc600; TODO */
         text-align: center;
         padding: 10px;
     }
