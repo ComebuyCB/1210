@@ -44,73 +44,88 @@
                         <img class="_logo" src="src/common/img/cb-logo.png">
                     </div>
                     <div class="col-md-8 text-right">
-                        <button class="btn btn-warning btn-sm bdrs-n">會員登入</button>
-                        <button class="btn btn-danger btn-sm bdrs-n">立即註冊</button>
-                        <button class="btn btn-sm text-white">忘記密碼</button>
+                        <button class="btn btn-warning px-3 px-sm-4  bdrs-n">會員登入</button>
+                        <button class="btn btn-danger px-3 px-sm-4 bdrs-n">立即註冊</button>
+                        <button class="btn btn-sm px-2 px-sm-3 text-white">忘記密碼</button>
                     </div>
                 </div>
-                <button id="navbar-toggler" type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".nav-main" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="d-md-none btn btn-lg pos-a loc-9" onclick="$('._nav-main').slideDown('fast')">
                     <i class="fa fa-bars text-white"></i>
                 </button>
             </div>
         </div>
-        <div class="_nav-main" class="navbar-collapse collapse">
-            <ul id="navbar" class="container-lg">
+        <div class="_nav-main" class="navbar-collapse">
+            <button type="button" class="d-md-none btn btn-lg pos-a loc-9" onclick="$('._nav-main').slideUp('fast')">
+                <i class="fa fa-times"></i>
+            </button>
+            <ul class="_navbar container-lg">
                 <li><a class="btn _btn-navlink">首頁</a></li>
-                <li class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單單
+                <li class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        真人百家樂
                     </a>
-                    <div class="_dropdown-menu">
-                        123
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/1000/1000);"></div>
+                        </div>
                     </div>
                 </li>
-                <li class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單單  
+                <li class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        玩運彩體育  
                     </a>
-                    <div class="_dropdown-menu">
-                        456
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/800/800);"></div>
+                        </div>
                     </div>
                 </li>
-                <div class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單
+                <div class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        電子遊戲
                     </a>
-                    <div class="_dropdown-menu">
-                        789
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/600/600);"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單
+                <div class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        捕魚遊戲
                     </a>
-                    <div class="_dropdown-menu">
-                        123<br>123<br>123<br>123<br>123<br>123<br>123<br>
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/600/400);"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單
+                <div class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        電子競技
                     </a>
-                    <div class="_dropdown-menu">
-                        456
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/400/400);"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="_dropdown">
-                    <a class="btn _btn-navlink _dropdown-btn">
-                        菜單菜單
+                <div class="_slidedown">
+                    <a class="btn _btn-navlink _slidedown-btn">
+                        彩票遊戲
                     </a>
-                    <div class="_dropdown-menu">
-                        789
+                    <div class="_slidedown-menu">
+                        <div class="container">
+                            <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/600/800);"></div>
+                        </div>
                     </div>
                 </div>
-                <div><a class="btn _btn-navlink">優優優優</a></div>
+                <div><a class="btn _btn-navlink">優惠活動</a></div>
             </div>
         </div>
     </header>
 
-    <main class="_bgc-darken">
+    <main class="_main">
         <div id="owl-carousel" class="owl-carousel owl-theme">
             <div class="item">
                 <div class="_h400 bgsz-cv" style="background-image: url(https://picsum.photos/1200/600);"></div>
@@ -129,11 +144,11 @@
         <div class="_bgc-dark">
             <div class="container-lg">
                 <div class="_ann-container">
-                    <div class="text-white">最新公告</div>
-                    <div id="marquee-01" class="text-white" style="visibility: hidden">
+                    <div class="_ann-title"><i class="fa fa-volume-up"></i> 最新公告：</div>
+                    <div id="marquee-01" class="_ann-marquee" style="visibility: hidden">
                         <ul>
-                            <li><a href="/">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 !!!</a></li>
-                            <li><a href="/">22222222222222222222222222222222222222222222222222222222222222222222222222222222 !!!</a></li>
+                            <li><a href="/">【系統公告】※敬愛的會員您好，DG娛樂城開放真人百家樂，妞妞，龍虎，骰寶，輪盤，請直接點選夢幻真人百家即可進入手機網頁版，感謝您的支持，預祝順心。</a></li>
+                            <li><a href="/">【系統公告】請各位會員選擇超商繳費，避免使用OK超商，因OK超商結帳作業為隔天入帳，故於OK超商繳款點數需等待至隔天才入點，請各位會員多加留意，祝順心愉快。</a></li>
                         </ul>
                     </div>
                 </div>
@@ -141,43 +156,49 @@
         </div>
 
         <div class="container-lg">
-            <section class="_block" id="c1">
-                <div class="_block-head">
-                    <h2 class="title">標題1</h2>
-                    <span class="subtitle">副標題</span>
+            <section class="_section" id="c1">
+                <div class="_section-head">
+                    <h2 class="title">玩運彩體育賽事</h2>
+                    <span class="subtitle">SPORTS EVENTS</span>
                 </div>
-                <div class="_block-body">
+                <div class="_section-body">
                     <div class="row _row10">
-                        <div class="col-md-4">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/1200/1000);"></div>
+                        <div class="col-6 col-md-4">
+                            <div class="_card-section1">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-5-4">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);"></a>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <p class="card-text">Some example text</p>
-                                    <button class="btn _btn-coffee btn-sm rounded-pill">Click Enter</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/1400/1200);"></div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Some example text</p>
-                                    <button class="btn _btn-coffee btn-sm rounded-pill">Click Enter</button>
+                                <div class="_card-body">
+                                    <a href="/" class="_card-text _border-gold-m _text-gold-m">SUPER玩運彩</a>
+                                    <a href="/" class="btn _btn-coffee rounded-pill d-none d-sm-inline-block">開始遊戲</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/1000/800);"></div>
+                        <div class="col-6 col-md-4">
+                            <div class="_card-section1">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-5-4">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);"></a>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <p class="card-text">Some example text</p>
-                                    <button class="btn _btn-coffee btn-sm rounded-pill">Click Enter</button>
+                                <div class="_card-body">
+                                    <a href="/" class="_card-text _border-gold-m _text-gold-m">鑫寶玩運彩</a>
+                                    <a href="/" class="btn _btn-coffee rounded-pill d-none d-sm-inline-block">開始遊戲</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="_card-section1">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-5-4">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);"></a>
+                                    </div>
+                                </div>
+                                <div class="_card-body">
+                                    <a href="/" class="_card-text _border-gold-m _text-gold-m">Some example text</a>
+                                    <a href="/" class="btn _btn-coffee rounded-pill d-none d-sm-inline-block">開始遊戲</a>
                                 </div>
                             </div>
                         </div>
@@ -185,98 +206,172 @@
                 </div>
             </section>
 
-            <section class="_block" id="c2">
-                <div class="_block-head">
-                    <h2 class="title">標題2</h2>
+            <section class="_section" id="c2">
+                <div class="_section-head">
+                    <h2 class="title">真人視訊-百家樂/龍虎/輪盤/骰寶/妞妞</h2>
+                    <span class="subtitle">LIVE CASINO</span>
                 </div>
-                <div class="_block-body">
+                <div class="_section-body">
                     <div class="row _row5">
-                        <div class="col-md-3">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/1200/800);"></div>
+                        <div class="col-6 col-md-3">
+                            <div class="_card-section2">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-4-5">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);">
+                                            <div class="btn _btn-coffee d-none d-sm-inline-block pos-a loc-3 m-2">開始遊戲</div>
+                                        </a>
+                                    </div>
                                 </div>
+                                <a href="/" class="d-sm-none _border-gold-m _text-gold-m">沙龍百家樂娛樂</a>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/800/1000);"></div>
+                        <div class="col-6 col-md-3">
+                            <div class="_card-section2">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-4-5">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);">
+                                            <div class="btn _btn-coffee d-none d-sm-inline-block pos-a loc-3 m-2">開始遊戲</div>
+                                        </a>
+                                    </div>
                                 </div>
+                                <a href="/" class="d-sm-none _border-gold-m _text-gold-m">DG百家樂娛樂</a>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card _brown-card">
-                                <div class="card-img-top">
-                                    <div class="_h300 bgsz-cv" style="background-image: url(https://picsum.photos/800/800);"></div>
+                        <div class="col-6 col-md-3">
+                            <div class="_card-section2">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-4-5">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/320/260);">
+                                            <div class="btn _btn-coffee d-none d-sm-inline-block pos-a loc-3 m-2">開始遊戲</div>
+                                        </a>
+                                    </div>
                                 </div>
+                                <a href="/" class="d-sm-none _border-gold-m _text-gold-m">歐博百家樂娛樂</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="_block" id="c3">
-                <div class="_block-head">
-                    <h2 class="title">標題3</h2>
+
+            <section class="_section" id="c3">
+                <div class="_section-head">
+                    <h2 class="title">電子遊戲-角子老虎機/SLOT</h2>
                 </div>
-                <div class="_block-body">
+                <div class="_section-body">
                     <div class="row _row5">
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
+                        <div class="col-lg-7">
+                            <div class="row _row5">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="_card-section3">
+                                        <div class="_card-img">
+                                            <div class="ar-1-1">
+                                                <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/200/200);"></a>
+                                            </div>
+                                        </div>
+                                        <a href="/" class="_card-text _border-gold-m _text-gold-m">QT 電子</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="_card-section3">
+                                        <div class="_card-img">
+                                            <div class="ar-1-1">
+                                                <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/400/400);"></a>
+                                            </div>
+                                        </div>
+                                        <a href="/" class="_card-text _border-gold-m _text-gold-m">AMBEA</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="_card-section3">
+                                        <div class="_card-img">
+                                            <div class="ar-1-1">
+                                                <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/300/300);"></a>
+                                            </div>
+                                        </div>
+                                        <a href="/" class="_card-text _border-gold-m _text-gold-m">Simple Play</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="_card-section3">
+                                        <div class="_card-img">
+                                            <div class="ar-1-1">
+                                                <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/400/400);"></a>
+                                            </div>
+                                        </div>
+                                        <a href="/" class="_card-text _border-gold-m _text-gold-m">必贏電子</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="_card-section3">
+                                        <div class="_card-img">
+                                            <div class="ar-1-1">
+                                                <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/100/100);"></a>
+                                            </div>
+                                        </div>
+                                        <a href="/" class="_card-text _border-gold-m _text-gold-m">遊聯天下</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
+                        <div class="col-lg-5 d-none d-lg-flex _flex-center">
+                            <img src="https://picsum.photos/100/100" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="_section" id="c4">
+                <div class="_section-head">
+                    <h2 class="title">電子遊戲-捕魚/FISH</h2>
+                </div>
+                <div class="_section-body"></div>
+            </section>
+            <section class="_section" id="c5">
+                <div class="_section-head">
+                    <h2 class="title">彩票-賓果BINGO/北京賽車/六合彩</h2>
+                </div>
+                <div class="_section-body">
+                    <div class="row _row5">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="_card-section5">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-1-1">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/800/800);"></a>
+                                    </div>
+                                </div>
+                                <a href="/" class="_card-text _border-gold-m _text-gold-m">六合彩</a>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="_card-section5">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-1-1">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/700/700);"></a>
+                                    </div>
+                                </div>
+                                <a href="/" class="_card-text _border-gold-m _text-gold-m">9k北京賽車</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="_card-section5">
+                                <div class="_card-img _border-gold-m">
+                                    <div class="ar-1-1">
+                                        <a href="/" class="ar-cont bgsz-cv" style="background-image: url(https://picsum.photos/600/600);"></a>
+                                    </div>
+                                </div>
+                                <a href="/" class="_card-text _border-gold-m _text-gold-m">賓果妞妞</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="_block" id="c4">
-                <div class="_block-head">
-                    <h2 class="title">標題4</h2>
+            <section class="_section" id="c6">
+                <div class="_section-head">
+                    <h2 class="title">電子競技</h2>
+                    <span class="subtitle">E-SPORT</span>
                 </div>
-                <div class="_block-body">6+0</div>
-            </section>
-            <section class="_block" id="c5">
-                <div class="_block-head">
-                    <h2 class="title">標題5</h2>
-                </div>
-                <div class="_block-body">
-                    <div class="row _row5">
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="_card-gold">
-                                <div class="_h300 bgsz-cv"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="_block" id="c6">
-                <div class="_block-head">
-                    <h2 class="title">標題6</h2>
-                    <span class="subtitle">副標題</span>
-                </div>
-                <div class="_block-body">
+                <div class="_section-body">
                     <div class="_card-gold">
-                        <div class="_h300 bgsz-cv"></div>
+                        <div class="_h280 bgsz-cv" style="background-image: url(https://picsum.photos/1600/800);"></div>
                     </div>
                 </div>
             </section>
@@ -397,6 +492,19 @@
             mq.init()
             $(window).on( 'resize', function(){
                 mq.rebuild()
+            })
+        })
+        $(function(){
+            $('._slidedown').on('mouseover',function(){
+                if (window.innerWidth >= 768)
+                $(this).find('._slidedown-menu').stop().slideDown('fast');
+            }).on('mouseleave',function(){
+                $(this).find('._slidedown-menu').stop().slideUp('fast');
+            })
+
+            $(window).on('click',function(){
+                if (window.innerWidth < 768)
+                $('._nav-main').slideUp('fast')
             })
         })
 
