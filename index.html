@@ -478,23 +478,24 @@
     </footer>
 
     <script type="text/babel">
-        $('#owl-carousel').owlCarousel({
-            items: 1,
-            smartSpeed: 500,
-            autoplay: true,
-            autoplayHoverPause: true,
-            autoplayTimeout: 5000,
-            loop: true,
-            dots: true,
-        });
         $(function(){
+            $('#owl-carousel').owlCarousel({
+                items: 1,
+                smartSpeed: 500,
+                autoplay: true,
+                autoplayHoverPause: true,
+                autoplayTimeout: 5000,
+                loop: true,
+                dots: true,
+                lazyLoad: true,
+            })
+
             let mq = new marquee('marquee-01')
             mq.init()
             $(window).on( 'resize', function(){
                 mq.rebuild()
             })
-        })
-        $(function(){
+
             $('._slidedown').on('mouseover',function(){
                 if (window.innerWidth >= 768)
                 $(this).find('._slidedown-menu').stop().slideDown('fast');
