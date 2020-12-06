@@ -46,8 +46,10 @@
 /*=== header ===*/
     header ._logo { height: 100px; }
     ._nav-top { padding: 15px 0; background-color: #000; }
-    ._nav-main { display: none; position: fixed; top: 0; left: 0; right: 0; background-color: #ffc600; z-index: 10; padding: 50px 0 0 0; box-shadow: 0 2px 16px #000; }
-    ._navbar { padding: 0; display: -ms-flexbox; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; flex-direction: column; list-style: none; padding-left: 0; margin-bottom: 0; }
+    ._nav-main { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 10; height: 100%; overflow-y: auto; }
+    ._navbar-bg { background-color: #ffc600; box-shadow: 0 2px 16px #000; }
+    ._navbar-backdrop { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; }
+    ._navbar { padding: 50px 0 0 0; display: -ms-flexbox; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; flex-direction: column; list-style: none; margin-bottom: 0; }
     ._navbar > * {  white-space: nowrap; width: 100%; border-top: 1px solid #b99527; }
 
     ._navbar ._btn-navlink { padding: 12px 8px; font-size: 16px; font-weight: 600; color: black; text-decoration: none; cursor: pointer; border-radius: 0; width: 100%; }
@@ -57,9 +59,9 @@
     ._navbar ._slidedown:hover > ._slidedown-btn { background-color: #8d0809; color: #fff; }
 
     @media( min-width: 768px ){ 
-        ._navbar > * { width: auto; border: 0; }
-        ._nav-main { display: block !important; position: relative; padding: 0; background-color: #ffc600; }
         ._navbar { padding: 0 1rem; flex-direction: row; overflow-x: auto; }
+        ._navbar > * { width: auto; border: 0; }
+        ._nav-main { display: block !important; position: relative; padding: 0; height: initial; overflow-y: initial; }
         ._navbar ._slidedown-btn::after{ content: "\f078"; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 0.75em; }
     }
     @media( min-width: 992px ){ 
@@ -76,7 +78,7 @@
 
     ._footer-bottom { background-color: #000000; }
 
-    ._footer-mobile { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid #aaa; }
+    ._footer-mobile { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid #aaa; z-index: 20; }
     ._footer-mobile ._menu-row { position: relative; align-items: center; text-align: center;  background-image: linear-gradient(to top,#666 0%,#252525 100%); color: #fff; padding: 10px 0; letter-spacing: 2px; font-weight: bold; line-height: 1; }
     ._footer-mobile ._menu-row > [class*=col-] > img { margin-bottom: 6px; width: 30px; }
     ._footer-mobile ._menu-row > *:not(:last-child)::after { content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 2px; background-color: #aaa; height: 70%; }
