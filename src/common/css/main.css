@@ -54,12 +54,21 @@
     ._navbar ._btn-navlink { padding: 12px 8px; font-size: 16px; font-weight: 600; color: black; text-decoration: none; cursor: pointer; border-radius: 0; width: 100%; }
     ._navbar ._btn-navlink:hover { background-color: #8d0809; color: #fff; }
 
-    ._navbar ._slidedown > ._slidedown-menu { display: none; position: absolute; left: 0; bottom: 0; transform: translateY(100%); width: 100%; min-width: 100%; margin: 0; transition: .25s bottom; background-color: #626262; z-index: -1; }
+    ._navbar ._slidedown-menu { display: none; position: absolute; left: 0; bottom: 0; transform: translateY(100%); width: 100%; min-width: 100%; margin: 0; transition: .25s bottom; background-color: #626262; z-index: -1; }
+    ._navbar ._slidedown-menu ._menu-link { position: relative; display: block; padding: 15px; text-align: center; }
+    ._navbar ._slidedown-menu ._menu-link > *:nth-child(2) { margin-top: -20px; }
+    ._navbar ._slidedown-menu ._menu-link-row { display: flex; align-items: center; padding: 15px; }
+    ._navbar ._slidedown-menu ._menu-link-row > *:nth-child(1) { flex: 10; }
+    ._navbar ._slidedown-menu ._menu-link-row > *:nth-child(2) { flex: 1; }
+
+    ._navbar ._slidedown-menu ._menu-link:hover,
+    ._navbar ._slidedown-menu ._menu-link-row:hover { background-color: #333; }
+    ._navbar ._slidedown-menu ._menu-link._menu-link-row { display: flex; align-items: center; }
     ._navbar ._slidedown:hover > ._slidedown-btn { background-color: #8d0809; color: #fff; }
 
-    ._click-enter-box { border: 3px solid #ffc600; padding: 0; display: inline-block; text-align: left; position: relative; background: #626262; }
-    ._click-enter-box ._title { background: #ffc600; padding: 4px 10px; position: absolute; top: -20px; left: -3px; font-weight: bold; color: #000; font-size: 18px; }
-    ._click-enter-box ._click { text-align: center; color: #fff; font-size: 14px; padding: 16px 10px 4px 10px; }
+    ._click-enter-box { display: inline-block; border: 3px solid #ffc600; padding: 0; text-align: left; position: relative; background: #626262; }
+    ._click-enter-box ._title { padding: 4px 10px; background: #ffc600; font-weight: bold; color: #000; font-size: 18px; }
+    ._click-enter-box ._click { padding: 4px 10px; text-align: center; color: #fff; font-size: 14px; }
 
     @media( min-width: 768px ){ 
         ._navbar { padding: 0 1rem; flex-direction: row; overflow-x: auto; }
@@ -69,6 +78,8 @@
     }
     @media( min-width: 992px ){ 
         ._navbar ._btn-navlink { padding: 12px 14px; font-size: 18px; }
+        ._click-enter-box ._title { position: absolute; top: -20px; left: -3px; }
+        ._click-enter-box ._click { padding-top: 16px; }
     }
 
 
@@ -170,7 +181,7 @@
     #index ._card-section4:hover { filter: contrast(1.1); }
     #index ._card-section4 ._card-img { border-radius: 12px; overflow: hidden; }
     @media (min-width: 576px) {
-        #index ._card-section4 ._card-text { display: block; position: relative; background: linear-gradient( 135deg, #555, #aaa ); margin: -15% -2px 0 -2px; padding: 10px; font-size: 20px; font-weight: bold; text-align: center; color: #000; }
+        #index ._card-section4 ._card-text { display: block; position: relative; background: linear-gradient( 135deg, #555, #aaa ); margin: -15% -2px 0 -2px; padding: 10px 0; font-size: 20px; font-weight: bold; text-align: center; color: #000; }
         #index ._card-section4:hover ._card-text { color: #f0f0f0; text-decoration: none; }
     }
     
