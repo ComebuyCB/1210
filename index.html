@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="shortcut Icon" type="image/x-icon" href="src/common/img/cb-logo.png">
+    <link rel="shortcut Icon" type="image/x-icon" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jquery -->
@@ -41,7 +41,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="_logo" src="src/common/img/cb-logo.png">
+                        <img class="_logo" src="https://picsum.photos/800/200">
                     </div>
                     <div class="col-md-8 text-right">
                         <button class="btn btn-warning px-3 px-sm-4  bdrs-n">會員登入</button>
@@ -67,7 +67,7 @@
                                 <div class="row no-gutters">
                                     <div class="col-3">
                                         <a href="/" class="_menu-link">
-                                            <div><img src="https://picsum.photos/600/800" class="w-100"></div>
+                                            <div><img src="https://picsum.photos/600/800" style="width: 90%;"></div>
                                             <div>
                                                 <div class="_click-enter-box">
                                                     <span class="_title">沙龍百家樂娛樂</span>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-3">
                                         <a href="/" class="_menu-link">
-                                            <div><img src="https://picsum.photos/300/400" class="w-100"></div>
+                                            <div><img src="https://picsum.photos/300/400"  style="width: 90%;"></div>
                                             <div>
                                                 <div class="_click-enter-box">
                                                     <span class="_title">DG百家樂娛樂</span>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="col-3">
                                         <a href="/" class="_menu-link">
-                                            <div><img src="https://picsum.photos/450/600" class="w-100"></div>
+                                            <div><img src="https://picsum.photos/450/600"  style="width: 90%;"></div>
                                             <div>
                                                 <div class="_click-enter-box">
                                                     <span class="_title">歐博百家樂娛樂</span>
@@ -285,7 +285,7 @@
                         <div class="_slidedown-menu">
                             <div class="container-lg">
                                 <div class="row no-gutters">
-                                    <div class="col-4">
+                                    <div class="col-3">
                                         <a href="/" class="_menu-link">
                                             <div><img src="https://picsum.photos/400/400" class="w-100"></div>
                                             <div>
@@ -296,7 +296,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-3">
                                         <a href="/" class="_menu-link">
                                             <div><img src="https://picsum.photos/500/500" class="w-100"></div>
                                             <div>
@@ -307,7 +307,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-3">
                                         <a href="/" class="_menu-link">
                                             <div><img src="https://picsum.photos/600/600" class="w-100"></div>
                                             <div>
@@ -676,7 +676,7 @@
                 <div class="_section-body">
                     <div class="_card-section6">
                         <div class="_card-img _border-gold-m">
-                            <img class="w-100" src="https://picsum.photos/1200/400">
+                            <a href="/"><img class="w-100" src="https://picsum.photos/1200/400"></a>
                         </div>
                         <a href="/" class="_card-text _border-gold-m _text-gold-m">泛亞電競</a>
                     </div>
@@ -930,7 +930,6 @@
                 let speed = 50
                 let _this = this
                 this.tl = new TimelineMax({ repeat: -1 })
-                console.log(this.tl)
 
                 if (this.mode == 'x') { // 從左往右跑 的模式
                     this.$ul.css({ 'flex-direction': 'row', 'width': '100%' })
